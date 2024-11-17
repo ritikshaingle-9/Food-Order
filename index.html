@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Food-Order</title>
+    <title>student</title>
 </head>
 <body>
-    <div class="heading-box">
-        <div class="column-heading">
-            <h1 class="textcenter heading">Food Ordering App</h1>
-            <img src="./images/food-cart.png" class="stall-img"alt="">
+    <div class="flex-container">
+        <div class="heading">
+            <h1 class="title">Food Ordering App</h1>
+            <img src="./images/food-cart.png" alt="" class="stall-img">
+        </div>
+     
+        <div class="order-container">
+            <input type="text" id="order-name" placeholder="Order here" class="input-btn btn">
+            <button type="button" onclick="addItems()" class="btn add">Add Items</button>
+            <button type="button" onclick="removeItems()" class="btn add remove">Remove Items</button>
+            <div id="order-container">
+            </div>
         </div>
 
-        <div class="box">
-            <div id="container-box" class="o-box">
-            <input type="text" placeholder="order items here" id="order-item" class="input-box">
-            </div>
-            <input type="text" placeholder="order items here" id="order-item" class="input-box">
-            <button class="btn order" onclick="addItem()">Order Now</button>
-            <button class="btn remove">Remove</button>
-        </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src="script.js"> </script>
 </body>
 </html>
